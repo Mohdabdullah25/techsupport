@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | TechSupport</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" href="favicon-32x32.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #ffffff);
+    }
+
+    header {
+      background: linear-gradient(90deg, #000000, #0d0d0e);
+      color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: slideDown 1s ease;
+    }
+
+    .contact-section {
+      padding: 60px 0;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    .contact-section h3 {
+      margin-bottom: 20px;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: #343a40;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control:focus {
+      border-color: #050505;
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    }
+
+    .btn-primary {
+      background-color: #242527;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background-color: #000000;
+      transform: scale(1.05);
+    }
+
+    textarea.form-control {
+      resize: none;
+    }
+
+    .contact-section p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .contact-info-box {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .contact-info-box:hover {
+      transform: translateY(-5px);
+    }
+
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #0d0d0d;
+      color: #bbb;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+     
+    }
+  </style>
+</head>
+<body>
+
+  <header class="text-center">
+    
+  </header>
+  <header class="d-flex flex-wrap align-items-center justify-content-between px-4 py-3 bg-dark text-white">
+    <h1 class="mb-0">Tech support</h1>
+    <nav class="d-flex align-items-center">
+      <a href="tech support.html">Home</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="support.html">Customer care</a>
+      <form class="d-flex ms-3" role="search">
+        <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <section class="contact-section container">
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6 mb-4">
+        <div class="contact-info-box">
+          <h3>Send Us a Message</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" class="form-control" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <div class="contact-info-box">
+          <h3>Contact Information</h3>
+          <p><strong>Address:</strong> CHANDRAYAN GUTTA, HYD</p>
+          <p><strong>Email:</strong> support@techsupport.com</p>
+          <p><strong>Phone:</strong> +91 9391769090</p>
+          <div class="mt-4">
+            <h5>Our Location</h5>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7617.421785112523!2d78.47766689496964!3d17.329492803916178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba2ab8f47e84d%3A0x130bccc482b899ff!2sMarvel%20Hospital!5e0!3m2!1sen!2sin!4v1744783980262!5m2!1sen!2sin"
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TechSupport. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+

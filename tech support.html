@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechSupport | Computer Accessories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="icon" href="favicon-32x32.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x500/?computer,accessories') no-repeat center center/cover;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+    }
+
+    .products {
+      padding: 50px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .product:hover {
+      transform: scale(1.02);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .product-info .price {
+      font-weight: bold;
+      margin-top: 12px;
+      font-size: 1rem;
+      color: #111;
+    }
+
+    .add-to-cart, .buy-now {
+      margin-top: 15px;
+      background: #0066cc;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .add-to-cart:hover {
+      background: #004999;
+    }
+
+    .buy-now {
+      background: #28a745;
+      margin-left: 10px;
+    }
+
+    .buy-now:hover {
+      background: #1e7e34;
+    }
+
+    footer {
+      background: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="d-flex flex-wrap align-items-center justify-content-between px-4 py-3 bg-dark text-white">
+    <h1 class="mb-0">TechSupport</h1>
+    <nav class="d-flex align-items-center">
+      <a href="tech support.html">Home</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="support.html">Customer care</a>
+      <form class="d-flex ms-3" role="search">
+        <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Wireless_Mouse.webp" class="d-block w-100" alt="Wireless Mouse">
+      </div>
+      <div class="carousel-item">
+        <img src="headset.webp" class="d-block w-100" alt="Headset">
+      </div>
+      <div class="carousel-item">
+        <img src="sound.webp" class="d-block w-100" alt="Sound System">
+      </div>
+      <div class="carousel-item">
+        <img src="Zeb-projector-banner.webp" class="d-block w-100" alt="Projector">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="products">
+    <div class="product" data-name="Mechanical Keyboard" data-price="2999" data-image="mechanical key board.webp">
+      <a href="accessories.html"><img src="mechanical key board.webp" alt="Keyboard" /></a>
+      <div class="product-info">
+        <h3>Mechanical Keyboard</h3>
+        <p</p>
+        <p class="price"></p>
+        
+      </div>
+    </div>
+    
+      
+    </div>
+  
+    <div class="product">
+      <a href="accessories.html"><img src="blanc.webp" alt="Gaming Mouse" /></a>
+      <div class="product-info">
+        <h3>TECH UZI</h3>
+        <p></p>
+       
+       <a href="https://zebronics.com/products/zeb-uzi">
+       </div></a> 
+      
+    </div>
+  
+    <div class="product">
+     <a href="accessories.html"><img src="headset.webp" alt="Monitor" /></a> 
+      <div class="product-info">
+        <h3>Tech Havoc</h3>
+        <p></p>
+        
+       <a href="https://zebronics.com/products/zeb-havoc?_pos=7&_sid=9dfdeb416&_ss=r">
+       </div></a> 
+      
+    </div>
+  
+    <div class="product">
+     <a href="accessories.html"> <img src="mouse pas abds.webp"  alt="Headset" /></a>
+      <div class="product-info">
+        <h3>Tech Blaze XL RGB</h3>
+        <p> </p>
+        
+        <a href="https://zebronics.com/products/zeb-blaze-xl-rgb?_pos=4&_sid=8d2cd2c0c&_ss=r"></a>
+      </div>
+      
+    </div>
+  
+    <div class="product">
+      <a href="accessories.html"><img src="projector abd.webp" alt="Webcam" /></a>
+      <div class="product-info">
+        <h3>Tech PixaPlay 25</h3>
+        <p></p>
+        <a href="https://zebronics.com/products/zeb-pixaplay-25?_pos=7&_sid=8a89087a6&_ss=r"></a>
+      </div>
+      
+    </div>
+  
+    <div class="product">
+      <a href="accessories.html"><img src="ssd.webp" alt="USB Hub" /></a>
+        <div class="product-info">
+            <h3>Tech-CSH01</h3>
+            <p>   </p>
+            
+            <a href="https://zebronics.com/products/zeb-csh01"></a>
+          </div>
+          
+    </div>
+  
+    <div class="product">
+       <a href="accessories.html"><img src="fan.webp" alt="USB Hub" /></a> 
+          <div class="product-info">
+              <h3>Tech-MSC200</h3>
+              <p>
+            </p>
+             
+             <a href="https://zebronics.com/products/zeb-msc200"></a> 
+            </div>
+  
+            </div>
+  
+            <div class="product"> 
+               <a href="accessories.html"><img src="ZEB-USB150WF1-pic1.webp" alt="USB Hub" /></a>
+                  <div class="product-info">
+                      <h3>Tech-USB150WF1 WiFi USB Mini Adapter </h3>
+                      <p>
+                    </p>
+                      
+                     <a href="https://zebronics.com/products/zeb-usb150wf1"></a> 
+                   
+                    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 TechSupport. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function () {
+        const product = this.closest('.product');
+        const name = product.getAttribute('data-name');
+        const price = product.getAttribute('data-price');
+        const image = product.getAttribute('data-image');
+
+        const item = { name, price, image };
+        cart.push(item);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${name} added to cart!`);
+      });
+    });
+  </script>
+
+</body>
+</html>
